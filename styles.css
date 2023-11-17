@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+}
+html, body {
+    height: 100%;
+    width: auto;
+    background-color: #c6ac9d;
+}
+
+/*--- HERO ---*/
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 1em;
+
+    height: 80vh;
+    width: auto;
+} 
+
+.hero-content {
+    text-align: center;
+    line-height: 7px;
+}
+.hero-content h1 {
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+
+    color: #325b4d;
+}
+.hero-content p {
+    font-size: 35px;
+    text-align: right;
+    font-family: 'Permanent Marker';
+
+    color: #d5d8d3;
+}
+.hero-content button {
+    background-color: #d4ab55;
+    color: #325b4d;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 20px;
+    float: inline-end;
+    font-size: 20px;
+    font-family: 'Permanent Marker'
+}
+.hero-content button:hover {
+    transform: scale(1.06);
+    transition: 0.6s ease;
+    background-color: #325b4d;
+    color: #d5d8d3;
+}
+
+.hero-img img {
+    height: 550px;
+    width: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/*--- HEADER ----*/
