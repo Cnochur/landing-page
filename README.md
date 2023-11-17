@@ -28,3 +28,6 @@ The goals I have for this assignment are:
 //improvements
 
 //credits/references
+
+Font via GoogleFonts
+Hero Image by - Megan (Markham) Bucknall . Available on PEXELS
