@@ -4,14 +4,68 @@
     box-sizing: border-box;
     font-family: 'Roboto' sans-serif;
     text-decoration: none;
+    overflow:none;
 }
 html, body {
     height: 100%;
     width: auto;
-    background-color: #c6ac9d;
     scroll-behavior: smooth;
     transition: 1.5s ease;
 }
+
+/*--- HEADER ----*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    text-shadow:      0 0 8px #d4ab55;
+    position:fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    top: -10px;
+    left: 0;
+    right: 0;
+}
+.header  p {
+    display: block;
+    font-size: 32px;
+    color: #325b4d;
+    font-family: 'Permanent Marker';
+    cursor: pointer;
+    text-decoration: none;
+    height: fit-content;
+}
+.header p:hover{
+    transform: scale(1.06);
+    transition: 0.6s ease;
+    color: #55a5c2;
+}
+.nav-bar {
+    display: block;
+    height: fit-content;
+
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    font-size: 26px;
+    align-items: center;
+    list-style: none;
+}
+.nav-bar a {
+    color: #325b4d;
+    font-family: 'Permanent Marker';
+
+}
+.nav-bar a:hover{
+    transform: scale(1.06);
+    transition: 0.6s ease;
+    color: #55a5c2;
+}
+
 
 /*--- HERO ---*/
 .hero-container {
@@ -20,8 +74,9 @@ html, body {
     align-items: center;
     flex: 1;
     gap: 1em;
+    background-color: #d07d56;
 
-    height: 89vh;
+    height: 100Svh;
     width: auto;
 } 
 
@@ -36,6 +91,7 @@ html, body {
 
     color: #325b4d;
 }
+
 .hero-content p {
     font-size: 35px;
     text-align: right;
@@ -60,58 +116,10 @@ html, body {
 }
 
 .hero-img img {
-    height: 550px;
-    width: 400px;
+    height: 450px;
+    width: 300px;
     border-radius: 5px;
     object-fit: cover;
-}
-
-/*--- HEADER ----*/
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding: 0px 20px;
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    background-color: #c6ac9d;
-    text-shadow:      0 0 8px #d4ab55;
-}
-.header  p {
-    display: block;
-    font-size: 32px;
-    color: #325b4d;
-    font-family: 'Permanent Marker';
-    cursor: pointer;
-    text-decoration: none;
-}
-.nav-bar {
-    display: block;
-
-}
-.nav-bar ul{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
-    font-size: 26px;
-    align-items: center;
-    list-style: none;
-}
-.nav-bar a {
-    color: #325b4d;
-    font-family: 'Permanent Marker';
-
-}
-.nav-bar a:hover{
-    transform: scale(1.06);
-    transition: 0.6s ease;
-    color: #55a5c2;
 }
 
 /*--- SKILLS ---*/
@@ -120,13 +128,15 @@ html, body {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    z-index: 1;
     
     align-items: center;
     flex: 1;
     gap: 1em;
 
-    height: 90vh;
+    height: 100vh;
     width: auto;
+
 }
 .skills-container > img {
     height: 100%;
@@ -141,8 +151,9 @@ html, body {
     font-family: 'Permanent Marker';
     padding: 0;
     position: absolute;
+    z-index: 10;
     
-    bottom: 80%;
+    bottom: 70%;
     letter-spacing: 10px;
 }
 .skills-card-container {
@@ -153,6 +164,7 @@ html, body {
     height: 70%;
     width: 100%;
     padding: 30px;
+    margin-top: 3em;
 }
 .skills-card {
     display: flex;
@@ -173,4 +185,102 @@ html, body {
     object-fit: fill;
     width: auto;
     height: auto;
+}
+
+/*--- ABOUT ---*/
+.about-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #d4ab55;
+
+    padding-top: 10px;
+}
+.about-container h2 {
+    text-align: center;
+    font-size: 72px;
+    color: #325b4d;
+    text-shadow: -10px 10px 10px  white;
+    font-family: 'Permanent Marker';
+    letter-spacing: 10px;
+}
+.about-content {
+    display: block;
+    text-align: left;
+    margin: 1em 5em;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+
+/*--- CONTACT ---*/
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    
+    align-items: center;
+    flex: 1;
+    gap: 1em;
+    font-size: 50px;
+    font-family: 'Permanent Marker';
+
+    height: 100vh;
+    width: auto;
+}
+.contact-container > img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.contact-container a{
+    text-decoration: none;
+    color: #55a5c2;
+}
+.contact-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    padding: 30px;
+    margin-top: 3em;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 3px #d5d8d3 solid;
+}
+.contact-card img {
+    object-fit: fill;
+    width: 150px;
+    height: auto;
+}
+.contact-container h2{
+    font-size: 72px;
+    color: #d4ab55;
+    text-shadow: -10px 10px 10px #d5d8d3;
+    font-family: 'Permanent Marker';
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    
+    bottom: 70%;
+    letter-spacing: 10px;
 }
