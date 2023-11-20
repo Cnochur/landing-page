@@ -25,9 +25,10 @@ The goals I have for this assignment are:
 - Transform the page into a profile page for me.
 
 
-//improvements
+Credits/References
+-------------------------------------------------------------
 
-//credits/references
-
-Font via GoogleFonts
-Hero Image by - Megan (Markham) Bucknall . Available on PEXELS
+  - Font via GoogleFonts
+  - Hero Image by - Megan (Markham) Bucknall . Available on PEXELS
+  - Contact Image - Pixabay. Available on Pexels
+  - Skills/Contact Icons - Available on https://www.iconfinder.com/
